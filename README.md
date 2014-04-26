@@ -1,6 +1,9 @@
-## ANT file for Arduino
+## Continuous Integration for Arduino with JenkinsCI 
 
-This is a simple ANT file that can be used to build Arduino sketches.
+This repository contains
+
+- an ANT build file that can be used to build Arduino sketches.
+- a Jenkins job template that can be used to setup a Jenkins job for your Arduino project.
 
 ## Preparing your source code
 
@@ -11,7 +14,21 @@ The build currently expects that the ino file contains the following imports and
 	void setup();
 	void loop(); 
 
-These need to be present at the top of the file.
+These need to be present at the top of the file. One of the things that the build file will do is copy your ```ino``` file into a standard ```cpp``` file. In order for the cpp compiler to work properly this needs to be in your source-code.
+
+## Preparing your build environment
+
+Your build environment (where you will be executing ANT / running the Jenkins job) needs to have the Arduino software installed.
+You'll need to specify that location in the ```build.properties``` file.
+
+For MacOSX this is most likely
+
+	arduino-home=/Applications/Arduino.app/Contents/Resources/Java
+
+For a linux based system this can be anything. Ony my setup it is located here:
+
+	arduino-home=/usr/local/arduino-1.0.5
+
 
 ## Invoking the build
 
