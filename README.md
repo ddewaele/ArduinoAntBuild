@@ -104,6 +104,11 @@ When launching the job, you'll be able to provide
 
 ![](https://dl.dropboxusercontent.com/u/13246619/ArduinoBuildJenkins/jenkins-job-launch.png)
 
+If everything goes according to plan your build should work fine:
+
+![](https://dl.dropboxusercontent.com/u/13246619/ArduinoBuildJenkins/jenkins-job-ok.png)
+
+
 
 ## References
 
