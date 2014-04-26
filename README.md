@@ -76,7 +76,7 @@ First thing you'll be needing is the ```hudson-cli.jar``` file. You can download
 
 	wget http://jenkins.mycompany.com/jnlpJars/hudson-cli.jar
 
-### Executing the command
+### Creating a Jenkins job with the CLI
 
 	java -jar hudson-cli.jar -s http://jenkins.mycompany.com create-job ArduinoBuildUsingMaven --username user --password pass < config.xml
 
@@ -88,9 +88,13 @@ If you click on the job you should be able to see its details. As you can see th
 
 ![](https://dl.dropboxusercontent.com/u/13246619/ArduinoBuildJenkins/jenkins-job-detail.png)
 
-The only thing you need to fill out is your git repository location,
+### Add your Github url
+
+As the template doesn't contain the actual github url of your project, you need to provide the correct location.
 
 ![](https://dl.dropboxusercontent.com/u/13246619/ArduinoBuildJenkins/empty_git.png)
+
+### Launching the job.
 
 When launching the job, you'll be able to provide
 

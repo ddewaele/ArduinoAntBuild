@@ -77,7 +77,7 @@
     <hudson.tasks.Ant plugin="ant@1.2">
       <targets>clean compile</targets>
       <antName>/usr/local/apache-ant-1.9.2/</antName>
-      <buildFile>embedded/build.xml</buildFile>
+      <buildFile>build.xml</buildFile>
     </hudson.tasks.Ant>
   </builders>
   <publishers/>
