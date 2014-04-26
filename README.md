@@ -90,7 +90,16 @@ If you click on the job you should be able to see its details. As you can see th
 
 The only thing you need to fill out is your git repository location,
 
-![](https://dl.dropboxusercontent.com/u/13246619/ArduinoBuildJenkins/empty_gif.png)
+![](https://dl.dropboxusercontent.com/u/13246619/ArduinoBuildJenkins/empty_git.png)
+
+When launching the job, you'll be able to provide
+
+- The branch name where the build should take place
+- The majorVersion we should assign to our sketch
+- The minorVersion we should assign to our sketch
+
+![](https://dl.dropboxusercontent.com/u/13246619/ArduinoBuildJenkins/jenkins-job-launch.png)
+
 
 ## References
 
